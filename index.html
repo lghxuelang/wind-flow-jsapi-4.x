@@ -1,12 +1,11 @@
 <html>
 
 <head>
-  <title>Snippet</title>
+  <title>风场粒子</title>
 
   <link rel="stylesheet" href="./css/main.css" />
 
   <!-- TODO: replace this with 4master to make it work correctly. -->
-  <!-- <script src="https://jsdev.arcgis.com/4.4"></script> -->
   <script src="http://js.arcgis.com/4.13/init.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.js"></script>
@@ -22,14 +21,13 @@
         name: "app",
         location: document.location.pathname.replace(/index\.html$/, "") + "/js/"
       }]
-    }, ["app/07-velocity-flow", "dojo/domReady!"], function(snippet) {
+    }, ["app/wind-flow", "dojo/domReady!"], function(snippet) {
       snippet.initialize();
     });
   </script>
 </head>
 <body>
   <div id="viewDiv">
-    <div id="viewLog" class="text-on-view" style="display: block"></div>
   </div>
 </body>
 </html>
